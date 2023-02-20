@@ -19,7 +19,7 @@ default: &default
   encoding: unicode
   post: localhost
   username: <%= ENV["MENYERA_DATABASE_USERNAME"] %>
-  database: <%= ENV["MENYERA_DATABASE_PASSWORD"] %>
+  password: <%= ENV["MENYERA_DATABASE_PASSWORD"] %>
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -85,5 +85,5 @@ test:
 production:
   <<: *default
   database: menyera_production
-  username: menyera
+  username: postgres
   password: <%= ENV["MENYERA_DATABASE_PASSWORD"] %>
