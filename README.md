@@ -27,10 +27,10 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="./app/assets/images/logo1.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Menyera README</b></h3>
 
 </div>
 
@@ -60,29 +60,37 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Menyera] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[Menyera]** This is a mobile web application designed to help users manage their budget effectively. With this app, users can view their transaction history, grouped by category, to easily track how much money they have spent and on what.
+
+## The application will be built using Ruby on Rails and will provide the following features:
+
+- User registration and login to ensure data privacy.
+- Ability to input new transactions and categorize them accordingly.
+- A dashboard to display spending by category, allowing users to quickly assess their spending habits.
 
 ## 🛠 Built With <a name="built-with"></a>
 
+> built using Ruby on Rails
+
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+### Rspec, unit tests, Rspec, Devise, Cancancan, Render.
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">ROR</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://expressjs.com/">ROR</a></li>
   </ul>
 </details>
 
@@ -99,9 +107,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[User registration and login to ensure data privacy]**
+- **[Ability to input new transactions and categorize them accordingly]**
+- **[A dashboard to display spending by category, allowing users to quickly assess their spending habits]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,103 +127,74 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
+
+### clone  ![here](https://github.com/svitalis123/menyera.git)
+- run bundle install
+- run rails db:create
+- run rails db:migrate
 
 ### Prerequisites
 
 In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- rails s
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  cd menyera
+  git clone @https://github.com/svitalis123/menyera.git
 ```
---->
+-
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
-  cd my-project
-  gem install
+  cd menyera
+  bundle install
 ```
---->
+-
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
 
 ```sh
   rails server
 ```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
 ```sh
   bin/rails test test/models/article_test.rb
 ```
---->
+-
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+- render
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@svitalis123](https://github.com/svitalis123)
+- Twitter: [@WilsonVitalis](https://twitter.com/WilsonVitalis)
+- LinkedIn: [vitalismutwiri](https://linkedin.com/in/vitalismutwiri)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,11 +202,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Incoparate React]**
+- [ ] **[Include scanning]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,9 +221,17 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+> Dear readers,
 
-If you like this project...
+> I am writing to encourage you to support the development of a mobile web application that helps users manage their budget. This project is incredibly important as it empowers individuals to take control of their finances and make informed decisions about their spending.
+
+> By supporting this project, you can contribute to the development of a tool that will allow users to easily track their expenses and see where their money is going. With the ability to categorize transactions, users can quickly identify areas where they may be overspending and make necessary adjustments to their budget.
+
+> This project is not only useful for individuals, but also for organizations that may be interested in providing financial education and resources to their members or clients. By contributing to the development of this application, you can help make financial literacy more accessible to everyone.
+
+> I urge you to support this project and be part of a community that is dedicated to empowering individuals to achieve financial stability and success.
+
+> Thank you for your support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,7 +239,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+> We would like to express our sincere appreciation and gratitude to Gregoire Vella for his outstanding design idea that served as an inspiration for our project. His work on Behance has been instrumental in shaping our vision and direction, and we are truly grateful for the invaluable contribution he has made to our project. We recognize his talent and creativity and credit him for the original design idea that has helped to bring our project to life. Thank you, Gregoire Vella, for sharing your wonderful work with the world and inspiring us to create something great.
 
 I would like to thank...
 
@@ -267,13 +251,13 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[where to start using the app]**
 
-  - [Answer_1]
+  - [refer to <a href="#getting-started">back to top</a>]
 
-- **[Question_2]**
+- **[how to contact the owner]**
 
-  - [Answer_2]
+  - [refer to <a href="#authors">back to top</a>]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -281,7 +265,7 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
