@@ -78,8 +78,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[User registration and login to ensure data privacy]**
 - **[Ability to input new transactions and categorize them accordingly]**
 - **[A dashboard to display spending by category, allowing users to quickly assess their spending habits]**
@@ -89,8 +87,6 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 
@@ -221,8 +217,6 @@ I would like to thank...
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **[where to start using the app]**
 
