@@ -1,0 +1,18 @@
+<%= form_with model: @group, url: user_groups_path,  method: :post, local: true, scope: :new_group do |f| %>
+  <div>
+    <%= f.label :name %><br>
+    <%= f.text_field :name, required: true %>
+  </div>
+  <div>
+     <%= f.label :icon %>
+      <% image_path = '' %>
+      <% Dir.glob(Rails.root.join('app', 'assets', 'images', '*.jpg')).each do |path| %>
+        <% image_url = asset_path(path) %>
+        <% image_path = path if params[:icon] == image_url %>
+        <%= radio_button_tag 'icon', image_url %>
+        <%= image_tag(image_url, class: 'icon', height: 50, width: 50) %>
+      <% end %>
+      <%= f.hidden_field :icon, value: File.basename(image_path), required: true %>
+  </div>
+  <%= f.submit "Add Category"%>
+<% end %>

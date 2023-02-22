@@ -1,0 +1,10 @@
+<div>
+  <% @categories.each do |category| %>
+    <%= link_to category.name, user_group_entities_path(user_id:current_user.id, group_id:category.id)%>
+    <%= category.entity_groups.sum(:amount)%>
+    <%= image_tag category.icon, height: 50 %>
+    
+
+    <%= link_to "add category", new_user_group_path(user_id: current_user) %>
+  <%end%>
+</div>
