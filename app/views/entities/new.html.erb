@@ -1,0 +1,16 @@
+<%= form_with model: @entity, url: user_group_entities_path, method: :post, local: true, scope: :new_entity do |f|%>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true%>
+  </div>
+  <div>
+    <%= f.label :amount %>
+    <%= f.text_field :amount, type: :number, required: true%>
+  </div>
+  <div>
+    <%= f.label :group_id %>
+    <%= f.select(:group_id, current_user.groups.all.map { |group| [group.name, group.id] }, { prompt: true }, { required: true }) %>
+
+  </div>
+  <%= f.submit "add_transaction" %>
+<%end%>
