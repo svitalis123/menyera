@@ -44,6 +44,8 @@ Style/FrozenStringLiteralComment:
 Layout/HashAlignment:
   EnforcedColonStyle: key
 Layout/ExtraSpacing:
+Layout/EndOfLine:
+  Enabled: false
   AllowForAlignment: false
 Layout/MultilineMethodCallIndentation:
   Enabled: true

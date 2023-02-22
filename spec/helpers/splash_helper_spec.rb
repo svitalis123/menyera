@@ -1,4 +1,4 @@
-require 'rails_helper' # rubocop :disable  Layout/EndOfLine
+require 'rails_helper'
 
 # Specs in this file have access to a helper object that includes
 # the SplashHelper. For example:
