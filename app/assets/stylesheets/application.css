@@ -106,7 +106,6 @@ body {
 
 .entity_index_container_div3 {
   width: 95%;
-  height: 45%;
   margin: 0.5rem auto 0.5rem auto;
   display: flex;
   justify-content: space-between;
@@ -118,7 +117,6 @@ body {
 .form_group_container_button_submit {
   padding: 0.8rem;
   width: 25%;
-  height: 20%;
   color: #e4ffc4;
   text-align: center;
   text-decoration: none;
@@ -129,7 +127,6 @@ body {
 
 .entity_index_container_button_new {
   width: 50%;
-  height: 20%;
 }
 
 .form_new_entity_container_button_submit,

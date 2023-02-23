@@ -84,6 +84,4 @@ test:
 #
 production:
   <<: *default
-  database: menyera_production
-  username: postgres
-  password: <%= ENV["MENYERA_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
