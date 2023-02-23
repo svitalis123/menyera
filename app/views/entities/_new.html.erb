@@ -1,0 +1,15 @@
+<%= form_with class: "form_new_entity_container", model: @entity, url: user_group_entities_path, method: :post, local: true, scope: :new_entity do |f|%>
+  <div class="form_new_entity_container_div1">
+    <%= f.text_field :name, required: true, placeholder: "Name", class: "form_new_entity_container_div1_input"%>
+  </div>
+  <div class="form_new_entity_container_div2">
+    <%= f.text_field :amount, type: :number, required: true, placeholder: "Amount", class: "form_new_entity_container_div2_input"%>
+  </div>
+  <div class="form_new_entity_container_div3">
+    <%= f.label :group_id %><br>
+    <%= f.select(:group_id, current_user.groups.all.map { |group| [group.name, group.id] }, { prompt: true }, { required: true }) %>
+
+  </div>
+  <%= f.submit "save", class: "form_new_entity_container_button_submit" %>
+  <%= link_to "back?", user_group_entities_path(current_user), class: "form_new_entity_container_button_back"%>
+<%end%>

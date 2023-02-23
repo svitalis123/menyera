@@ -1,7 +1,7 @@
 class GroupsController < ApplicationController
   def index
     @user = User.find(current_user.id)
-    @categories = Group.where(user_id: @user.id)
+    @groups = Group.where(user_id: @user.id)
   end
 
   def new
