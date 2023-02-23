@@ -1,7 +1,15 @@
-<div>
-  <% @entities.each do |entity|%>
-    <%= @total_amount%>
-    <%= entity.name%>
-    <%= entity.amount%>
+<div class="entity_index_container">
+  <div class="entity_index_container_div1">
+    <h2 class="entity_index_container_div1_h2">total amount</h2>
+    <b>$<%= @total_amount%></b>
+  </div>
+  <% if !@entities.empty?%>
+    <%= render @entities %>
+  <%else%>
+    <h2 class="entity_index_container_div1_h2_h2">You have none transaction kindly add one using add a new transaction button</h2>
   <%end%>
+  <div class="entity_index_container_div3">
+    <%= link_to "back", user_groups_path(current_user), class: "entity_index_container_button_back"%>
+    <%= link_to "add a new transaction", new_user_group_entity_path(current_user), class: "entity_index_container_button_new"%>
+  </div>
 </div>
