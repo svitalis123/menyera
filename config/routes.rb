@@ -3,6 +3,8 @@
 Rails.application.routes.draw do
 
   devise_for :users
+  root to: "splash#see"
+  resources :splash
   resources :users, only: [:show, :new, :create, :index, :destroy, :update] do
     resources :groups, only: [:index, :show, :create, :new, :update, :destroy] do
       resources :entities, only: [:index, :show, :create, :new, :update, :destroy]
@@ -14,5 +16,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root to: "groups#index"
+ 
 end

@@ -1,3 +1,7 @@
 class SplashController < ApplicationController
-  def index; end
+  def see
+    return unless current_user
+
+    redirect_to user_groups_path(current_user)
+  end
 end
