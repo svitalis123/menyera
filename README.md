@@ -1,32 +1,7 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+
   <img src="./app/assets/images/logo1.png" alt="logo" width="140"  height="auto" />
   <br/>
 
@@ -61,8 +36,6 @@ After you're finished please remove all the comments and instructions!
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [Menyera] <a name="about-project"></a>
-
-> Describe your project in 1 or 2 sentences.
 
 **[Menyera]** This is a mobile web application designed to help users manage their budget effectively. With this app, users can view their transaction history, grouped by category, to easily track how much money they have spent and on what.
 
@@ -105,8 +78,6 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[User registration and login to ensure data privacy]**
 - **[Ability to input new transactions and categorize them accordingly]**
 - **[A dashboard to display spending by category, allowing users to quickly assess their spending habits]**
@@ -116,8 +87,6 @@ After you're finished please remove all the comments and instructions!
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://menyera.onrender.com)
 
@@ -249,15 +218,13 @@ I would like to thank...
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
 - **[where to start using the app]**
 
-  - [refer to <a href="#getting-started">back to top</a>]
+  - [refer to <a href="#getting-started">getting-started</a>]
 
 - **[how to contact the owner]**
 
-  - [refer to <a href="#authors">back to top</a>]
+  - [refer to <a href="#authors">authors</a>]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -266,7 +233,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

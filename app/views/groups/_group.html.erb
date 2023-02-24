@@ -1,0 +1,7 @@
+<div class="index_group_entity_container_div2">
+  <%= image_tag group.icon, height: 50, width: 50, class: "index_group_entity_container_div2_img" %>
+  <div class="index_group_entity_container_div2_div_inside">
+    <p class="index_group_entity_container_div2_div_inside_p1"><%= link_to group.name, user_group_entities_path(user_id:current_user.id, group_id:group.id, class: "index_group_entity_container_div2_div_inside_p1_a")%></p>
+    <b class="index_group_entity_container_div2_div_inside_b1">$<%= group.entity_groups.sum(:amount)%></b>
+  </div>
+</div>

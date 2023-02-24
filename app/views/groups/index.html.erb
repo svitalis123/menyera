@@ -1,0 +1,11 @@
+<%= render "shared/navbar" %>
+<div class="index_group_entity_container">
+  <% if !@groups.empty? %>
+    <%= render @groups%>
+  <%else%>
+    <h2 class="entity_index_container_div1_h2_h2">You have none transaction kindly add one using add a new transaction button</h2>
+  <%end%>
+  <div class="index_group_entity_container_div_new">
+    <%= link_to "add a new category", new_user_group_path(user_id: current_user), class: "index_group_entity_container_div_new_button" %>
+  </div>
+</div>

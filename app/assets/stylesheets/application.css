@@ -13,3 +13,326 @@
  *= require_tree .
  *= require_self
  */
+
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+  src:
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular')
+    format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
+  src:
+    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
+    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
+    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold')
+    format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'adelle_rgregular';
+  src: url('https://litmus.com/fonts/Emails/adelle_reg-webfont.eot');
+  src:
+    url('https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix')
+    format('embedded-opentype'),
+    url('https://litmus.com/fonts/Emails/adelle_reg-webfont.woff') format('woff'),
+    url('https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf') format('truetype'),
+    url('https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif !important;
+}
+
+.entity_index_container {
+  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 1rem;
+  background-color: #f1f3f2;
+}
+
+.entity_index_container_div1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.entity_index_container_div1_h2 {
+  text-transform: capitalize;
+}
+
+.entity_index_container_div2 {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto 0 auto;
+  padding: 0.5rem;
+  background-color: #fff;
+  gap: 0.5rem;
+}
+
+.entity_index_container_div2_inside {
+  display: flex;
+  justify-content: space-between;
+}
+
+.entity_index_container_div2_inside_h3 {
+  text-transform: capitalize;
+}
+
+.entity_index_container_div2_time_created {
+  font-size: small;
+  font-weight: lighter;
+}
+
+.entity_index_container_div3 {
+  width: 100%;
+  margin: 0.5rem auto 0.5rem auto;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.splash_container {
+  display: flex;
+  position: absolute;
+  bottom: 40%;
+  flex-direction: column;
+}
+
+.splach_inner_div {
+  flex: 0.2;
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 90%;
+  gap: 0.3rem;
+}
+
+.whole_body_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button_splash {
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  color: #fff !important;
+  font-family: 'adelle_rgregular', Helvetica, Arial, sans-serif !important;
+  background-color: #3778c2;
+  border-radius: 5px;
+}
+
+.entity_index_container_button_back,
+.form_new_entity_container_button_submit,
+.entity_index_container_button_new,
+.form_group_container_button_submit {
+  padding: 1rem;
+  font-family: 'adelle_rgregular', Helvetica, Arial, sans-serif !important;
+  width: 100%;
+  color: #e4ffc4;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #60b524;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form_new_entity_container_button_submit,
+.form_group_container_button_submit {
+  width: 100%;
+  height: 10%;
+  margin-top: 3%;
+}
+
+.index_group_entity_container_div_new_button {
+  width: 100%;
+  height: 20%;
+  background-color: #60b524;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.entity_index_container_button_back:hover,
+.entity_index_container_button_new:hover,
+.form_new_entity_container_button_submit:hover,
+.index_group_entity_container_div_new_button:hover,
+.form_group_container_button_submit:hover {
+  background-color: yellowgreen;
+}
+
+.form_new_entity_container,
+.form_group_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f6f8;
+  text-align: center;
+  height: 100vh;
+}
+
+.form_new_entity_container_div1,
+.form_group_container_div1 {
+  width: 100%;
+}
+
+.form_new_entity_container_div1_input,
+.form_new_entity_container_div2_input,
+.form_group_container_div1_field_name {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  padding: 1rem;
+  outline: none;
+}
+
+.form_new_entity_container_button_back,
+.form_group_container_button_back {
+  text-transform: capitalize;
+  text-decoration: none;
+  margin-top: 3%;
+}
+
+.index_group_entity_container {
+  background-color: #f1f3f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.index_group_entity_container_div_new {
+  width: 95%;
+  display: flex;
+  margin: 1rem auto 1rem auto;
+}
+
+.index_group_entity_container_div2 {
+  width: 95%;
+  display: flex;
+  margin: 0.5rem auto 0.5rem auto;
+  background-color: #fff;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.index_group_entity_container_div2_div_inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.index_group_entity_container_div2_div_inside_p1 {
+  text-transform: capitalize;
+  font-size: large;
+}
+
+.index_group_entity_container_div2_div_inside_p1 > a {
+  color: #b1b0b0 !important;
+}
+
+.index_group_entity_container_div2_div_inside_b1 {
+  color: #434b54;
+}
+
+.form_group_container_div2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form_group_container_button_submit_div_inside {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button.navbar-toggler,
+.search {
+  border: none;
+  font-size: 2rem;
+}
+
+.navbar-toggler {
+  border: 1px solid white;
+}
+
+.signup_page_main_div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+.signup_page_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.input,
+.form-control {
+  width: 100%;
+  padding: 1rem !important;
+}
+
+.signup_btn {
+  margin-top: 20px;
+}
+
+.entity_index_container_div1_h2_h2 {
+  text-align: center;
+  font-size: medium;
+}
+
+.field {
+  text-align: center;
+}
+
+.field_ex {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.abutton {
+  width: 100%;
+  padding: 0.8rem;
+}
+
+.bi-list {
+  color: #fff;
+  font-size: x-large !important;
+}
