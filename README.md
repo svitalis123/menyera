@@ -119,7 +119,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://last-3f0w.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,7 +129,7 @@ After you're finished please remove all the comments and instructions!
 
 To get a local copy up and running, follow these steps.
 
-### clone  ![here](https://github.com/svitalis123/menyera.git)
+### clone  [here](https://github.com/svitalis123/menyera.git)
 - run bundle install
 - run rails db:create
 - run rails db:migrate
