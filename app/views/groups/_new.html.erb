@@ -2,20 +2,21 @@
   <div class="form_group_container_div1">
     <%= f.text_field :name, required: true, placeholder: "Category Name", class: "form_group_container_div1_field_name" %>
   </div>
+  <%= f.label :icon %>
   <div class="form_group_container_div2">
-     <%= f.label :icon%>
+    <div class="form_group_container_button_submit_div_inside">
       <% image_path = '' %>
-      <div class="form_group_container_button_submit_div_inside">
-        <% Dir.glob(Rails.root.join('app', 'assets', 'images', '*.jpg')).each do |path| %>
-          <div class="form_group_container_button_submit_div_inside_one_div">
-            <% image_url = asset_path(path) %>
-            <% image_path = path if params[:icon] == image_url %>
-            <%= radio_button_tag 'icon', image_url %>
-            <%= image_tag(image_url, class: 'icon', height: 50, width: 50) %>
-          </div>
+      
+      <% Dir.glob(Rails.root.join('app', 'assets', 'images', '*.jpg')).each do |path| %>
+        <div class="form_group_container_button_submit_div_inside_one_div">
+          <% image_url = asset_path(path) %>
+          <% image_path = path if params[:icon] == image_url %>
+          <%= radio_button_tag 'icon', image_url %>
+          <%= image_tag(image_url, class: 'icon', height: 50, width: 50) %>
+        </div>
         <% end %>
+       <%= f.hidden_field :icon, value: File.basename(image_path), required: true %>
       </div>
-      <%= f.hidden_field :icon, value: File.basename(image_path), required: true %>
   </div>
   <%= f.submit "Save", class: "form_group_container_button_submit"%>
   <%= link_to "back", user_groups_path(current_user), class: "form_group_container_button_back"%>
