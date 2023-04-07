@@ -210,7 +210,6 @@ Feel free to check the [issues page](../../issues/).
 
 > We would like to express our sincere appreciation and gratitude to Gregoire Vella for his outstanding design idea that served as an inspiration for our project. His work on Behance has been instrumental in shaping our vision and direction, and we are truly grateful for the invaluable contribution he has made to our project. We recognize his talent and creativity and credit him for the original design idea that has helped to bring our project to life. Thank you, Gregoire Vella, for sharing your wonderful work with the world and inspiring us to create something great.
 
-I would like to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
